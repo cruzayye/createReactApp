@@ -1,0 +1,97 @@
+// $light-grey: #E3E3E3;
+// $table-rows: #EEEEEE;
+
+.table h1 {
+  text-align: left;
+  color: #444444;
+  font-family: "Helvetica Now Text";
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 36px;
+
+}
+
+.table {
+  width: 600px;
+  margin:auto;
+  margin-top: 24px;
+}
+
+.table .top {
+  height: 83px;
+  width: 251px;
+  margin-bottom: 24px;
+}
+
+.table ul {
+  padding-left: 0;
+}
+
+.table li {
+  height: 12px;
+  width: 57px;
+  color: #767676;
+  font-family: "Helvetica Now Text";
+  font-size: 14px;
+  line-height: 12px;
+  margin-right: 36px;
+}
+
+.table .active {
+  color: #007B80;
+  border-bottom: 2px solid #007B80;
+  padding-bottom: 2px;
+  width: max-content;
+
+}
+
+.table ul {
+  list-style-type: none;
+  display: inline-flex;
+}
+
+.table table {
+  border-collapse: collapse;
+  width: 600px;
+  box-sizing: border-box;
+  height: 154px;
+  border: 1px solid #EEEEEE
+
+}
+
+.table th, td {
+  padding-top: 15.88px;
+  padding-left: 25px;
+}
+
+.table tr {
+
+  background-color: white;
+  border-bottom: 2px solid #EEEEEE;
+  text-align: left;
+}
+
+.table tbody td {
+  height: 24px;
+  width: 50px;
+  color: #444444;
+  font-family: "Helvetica Now Text";
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+
+
+.table th {
+  height: 19px;
+  width: 32px;
+  color: #767676;
+  font-family: "Helvetica Now Text";
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  line-height: 19px;
+
+}

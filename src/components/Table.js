@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import './Table.scss';
+
 import { teams } from '../data/data';
 
 const Table = props => {
@@ -20,6 +22,10 @@ const Table = props => {
     loadTab()
   }
 
+  const isActive = (e) => {
+    return tab === e.currentTarget.textContent ? 'active' : ''
+  }
+
   useEffect(() => {
     loadTab()
     console.log('omg', sport)
@@ -27,12 +33,14 @@ const Table = props => {
 
   return (
     <div className='table'>
-      <h1>Sports Mascots</h1>
-      <ul>
-        <li onClick={clickTab}>Baseball</li>
-        <li onClick={clickTab}>Basketball</li>
-        <li onClick={clickTab}>Football</li>
-      </ul>
+      <div className='top'>
+        <h1>Sports Mascots</h1>
+        <ul>
+          <li className={tab === 'Baseball' && 'active'} onClick={clickTab}>Baseball</li>
+          <li className={tab === 'Basketball' && 'active'} onClick={clickTab}>Basketball</li>
+          <li className={tab === 'Football' && 'active'} onClick={clickTab}>Football</li>
+        </ul>
+      </div>
       <table>
         <thead>
         <tr>
