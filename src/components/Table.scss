@@ -1,5 +1,3 @@
-// $light-grey: #E3E3E3;
-// $table-rows: #EEEEEE;
 
 .table h1 {
   text-align: left;
@@ -38,12 +36,15 @@
   margin-right: 36px;
 }
 
+.table li:hover {
+  cursor: default;
+}
+
 .table .active {
   color: #007B80;
   border-bottom: 2px solid #007B80;
   padding-bottom: 2px;
   width: max-content;
-
 }
 
 .table ul {
@@ -57,7 +58,6 @@
   box-sizing: border-box;
   height: 154px;
   border: 1px solid #EEEEEE
-
 }
 
 .table th, td {
@@ -81,8 +81,6 @@
   letter-spacing: 0;
   line-height: 24px;
 }
-
-
 
 .table th {
   height: 19px;
